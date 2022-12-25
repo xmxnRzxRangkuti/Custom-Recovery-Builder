@@ -24,27 +24,27 @@ on:
         type: choice
         options:
         - shrp-12.1
-        - v3_11.0
+        - v3_10.0
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
-        default: 'https://github.com/cd-Spidey/custom_recovery_tree_xiaomi_cannong'
+        default: 'https://github.com/xmxnRzxRangkuti/zc500tg-z00vd_recovery10'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'Android-S'
+        default: 'android-10'
       DEVICE_PATH:
         description: 'Specify your Device Path' # As is, just like your DEVICE_PATH in your BoardConfig.mk
         required: true
-        default: 'device/realme/nashc'
+        default: 'device/asus/ASUS_Z00VD'
       DEVICE_NAME:
         description: 'Specify your Device Codename' # As is, just like your PRODUCT_DEVICE in your device tree.
         required: true
-        default: 'nashc'
+        default: 'ASUS_Z00VD'
       MAKEFILE_NAME:
         description: 'Specify your Makefile Name' # Look for twrp_ or omni_codename.mk, just remove the .mk
         required: true
-        default: 'twrp_nashc'
+        default: 'twrp_ASUS_Z00VD'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
